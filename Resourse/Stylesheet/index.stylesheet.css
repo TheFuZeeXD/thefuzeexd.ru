@@ -1,0 +1,796 @@
+@font-face {  /* Linked Fonts: Cairo */
+    font-family: Cairo;
+    src: url(/Fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+  }
+ 
+  @font-face {  /* Linked Fonts: BubbleSans */
+    font-family: BubbleSans;
+    src: url(/Fonts/BubbleSans/BubbleSans-Regular.otf);
+  }
+ 
+  @font-face {  /* Linked Fonts: BubbleSans */
+    font-family: PaluiSP;
+    src: url(/Fonts/PaluiSP/PaluiSPDemo-Bold.otf);
+  }
+
+::selection { /* Select Text */
+    background-color: #0055ff00;
+    color: black;
+}
+
+body { /* HTML Document */
+  font-weight: 700;  
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Background: Dark*/
+  background: linear-gradient(270deg, #000000c5, #131313b3, #000000af, #000000e8, #000000, #111010e4);
+   background-size: 400% 400%; 
+  /* Background: Dark */
+  color: rgb(255, 255, 255);
+  font-family:monospace; /* Fonts */
+}
+
+body.HightBody { /* Background: Light */
+   
+   background: linear-gradient(270deg, #264fca9d, #185fed65, #0073ff6a, #1d99fe73, #1055f668, #0073ff7e);
+}
+
+.hidden { /* Hidden content before scrolling */
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+}
+
+.show { /* Animation of the appearance of elements when scrolling */
+  opacity: 1;
+   transform: translateY(0);
+}
+
+
+ body::-webkit-scrollbar {
+      width: 16px;               /* Scrollbar size */
+ }
+
+ body::-webkit-scrollbar-track {
+     background: rgb(0, 0, 0);        /* Scrollbar background color */
+ }
+
+ body::-webkit-scrollbar-thumb {
+   background-color: rgb(68, 68, 68);    /* color Scrollbar */
+  border-radius: 20px;       /* border-radius Scrollbar */
+  border: 3px solid rgb(0, 0, 0);  /* border ScrollBar */
+  }
+
+
+    /* Information Section  */
+
+.information {
+   margin-top:35;
+}
+
+.information img { /* Avatar */
+    border-radius: 50%;
+    max-width: 40%;
+    box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 44px 0 rgba(0, 0, 0, 0.507);
+    animation-name: AnimationShadow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes AnimationShadow {
+    0% {box-shadow: 0 0 rgba(255, 12, 12, 0), 0 6px 22px 0 rgba(255, 255, 255, 0.527);}
+    15% {box-shadow: 0 0 rgba(255, 12, 12, 0.2), 0 6px 44px 0 rgba(255, 0, 0, 0.743);}      
+    25% { box-shadow: 0 0 rgba(0, 255, 225, 0.2), 0 6px 44px 0 rgba(255, 196, 4, 0.743);}
+    45% { box-shadow: 0 0 rgba(255, 217, 0, 0.2), 0 6px 44px 0 rgba(0, 26, 255, 0.743);}
+    75% { box-shadow: 0 0 rgba(0, 255, 225, 0.2), 0 6px 44px 0 rgba(255, 4, 247, 0.743);}
+    80% { box-shadow: 0 0 rgba(0, 255, 225, 0.2), 0 6px 44px 0 rgba(4, 8, 255, 0.743);}
+    100% { box-shadow: 0 0 rgba(0, 255, 225, 0.2), 0 6px 44px 0 rgba(255, 255, 255, 0.743);}
+}
+
+.information h1 { /* NickName */
+   font-size:5vw;
+   margin-bottom:-5;
+   user-select: text;
+   font-family: PaluiSP;
+}
+
+.information p { /* Description */
+    font-family:BubbleSans;
+   display:inline-block;
+    max-width:70%;
+    font-size: 20px;
+    user-select: text;
+}
+
+    /* Links Section */
+
+#SectionLinksLanguage {
+  font-size: 2em;
+}
+.Links img { /* Links to social networks */
+    margin-left: 18;
+    margin-right: 18;
+    width: 40px;
+    transition-duration: 0.3s;
+    padding:6px;
+    border-radius: 30px;
+}
+
+.Links img:hover {
+background-color: #00000089;   
+}
+
+.hidden { /* Hidden content before scrolling */
+opacity: 0;
+transform: translateY(30px);
+transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+}
+
+.show { /* Animation of the appearance of elements when scrolling */
+opacity: 1;
+transform: translateY(0);
+}
+
+    /* Project Section */
+
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+#Youtube { /* Button with link to YouTube Channel in project section  */
+background-color: rgba(255, 255, 255, 0.094);
+display: inline-block;
+width: 470;
+max-width: 43%;
+height: 250px;
+border-radius: 30px 30px 60px 60px;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 22px 0 rgba(79, 75, 75, 0.507);
+transition-duration: 0.3s;
+}
+
+#DivYoutube { 
+display: inline;
+margin: 0;
+padding: 0;
+}
+
+#Youtube h1 {
+font-size: 2em;
+}
+
+#Youtube:hover { /* YouTube container shadow animation */
+background-color: #3333335f;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgb(255, 97, 97);
+}
+
+#TextInYouTube:hover { /* YouTube container title */
+
+background-image: linear-gradient(to right,rgb(250, 127, 127),rgb(179, 101, 101));
+background-clip: text;
+color:transparent;
+}
+
+#Youtube a {
+text-decoration: none;
+color: white;
+padding: 15px;
+background-color: #0c0a0aa3;
+border-radius: 20px;
+user-select: none;
+}
+
+#Youtube p {
+margin-bottom: 28px;
+font-size: 0.6em;
+}
+
+#Youtube a:hover {
+color: black;
+background-color: rgb(255, 97, 97);
+
+}
+
+@media screen and (max-width: 700px) { /* Mobile Button with link to YouTube Channel in project section  */
+#Youtube { 
+    background-color: rgba(128, 121, 121, 0.277);
+    display: inline-block;
+    max-width: 90%;
+    height: 250px;
+    border-radius: 30px 30px 60px 60px;
+    box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 22px 0 rgba(79, 75, 75, 0.507);
+transition-duration: 0.2s;
+}
+}
+
+
+#Discord { /* Button with link to Discord Server in project section  */
+background-color: rgba(255, 255, 255, 0.094);
+display: inline-block;
+width: 470;
+margin-left: 33px;
+max-width: 43%;
+height: 250px;
+border-radius: 30px 30px 60px 60px;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 22px 0 rgba(79, 75, 75, 0.507);
+transition-duration: 0.3s;
+}
+
+#Discord:hover {
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgb(144, 110, 255);
+background-color: #3333335f;
+}
+
+#Discord h1 {
+font-size: 2em;
+}
+
+#DivDiscord {
+margin: 0;
+padding: 0;
+display: inline;
+}
+
+#TextInDiscord:hover { /* Discord container title */
+background-image: linear-gradient(to right, rgb(250, 127, 127),rgb(144, 110, 255));
+background-clip: text;
+color:transparent;    
+}
+
+
+@media screen and (max-width: 700px) { /* Mobile Button with link to YouTube Channel in project section  */
+#Discord {
+    background-color: rgba(128, 121, 121, 0.277);
+    display: inline-block;
+
+    max-width: 90%;
+   margin: 0;
+   margin-top: 50px;
+    height: 250px;
+    border-radius: 30px 30px 60px 60px;
+    box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 22px 0 rgba(79, 75, 75, 0.507);
+
+    transition-duration: 0.2s;
+}
+}
+#Discord:hover {
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgb(144, 110, 255);
+background-color: #3333335f;
+}
+
+#Discord h1 {
+font-size: 2em;
+}
+
+#DivDiscord {
+margin: 0;
+padding: 0;
+display: inline;
+}
+
+#Discord p {
+margin-bottom: 28px;
+font-size: 0.6em;
+}
+
+#Discord a {
+text-decoration: none;
+color: white;
+padding: 15px;
+background-color: #0c0a0aa3;
+border-radius: 20px;
+user-select: none;
+}
+
+#Discord a:hover {
+color: black;
+background-color: rgb(144, 110, 255);
+
+}
+
+/* Burger Menu for Mobile Devices */
+.menu-icon {display: none;}
+
+@media screen and (max-width: 700px) {
+#Title {
+    top:-3px;
+    cursor: pointer;
+ }
+.menu-icon {
+position: fixed;
+top: 4px;
+right: 10px;
+font-size: 28px;
+cursor: pointer;
+padding:8px 10px;
+background: #2c2b2bbf;
+color: white;
+border-radius: 5px;
+z-index: 1000;
+display: block;
+user-select: none;
+}
+
+/* Hide right menu */
+.menu {
+position: fixed;
+top: 0;
+right: -250px; 
+width: 250px;
+height: 100vh;
+background: #333;
+box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+transition: right 0.3s ease-in-out;
+z-index: 222;
+user-select: none;
+}
+
+.menu ul {
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: center;
+margin-top: 50px;
+user-select: none;
+}
+
+.menu ul li {
+padding: 15px;
+}
+
+.menu ul li a {
+color: white;
+text-decoration: none;
+font-size: 22px;
+display: block;
+margin-right: 49px;
+padding-left: 22px;
+padding-right: 22px;
+padding-bottom: 12px;
+padding-top:12px;
+border-radius: 22px;
+box-shadow: 0 0 rgba(255, 255, 255, 0.929), 0 6px 13px 0 #01ffc487;
+user-select: none;
+}
+.menu:hover ul:hover li:hover a:hover {
+background-color: rgba(0, 0, 0, 0.371);
+color: aqua;
+}
+/* Active menu status */
+.menu.active {
+right: 0;
+}
+}
+
+    /* Partner Section */
+
+.Partner {
+margin-top: 50px;
+}
+
+#SectionPartnerLanguage {
+font-size: 2em; 
+}
+
+.ALWOHub img {
+width: 180;
+border-radius: 50px;
+float: left;
+padding-right: 20;
+}
+
+
+.ALWOHub { /* Container Partner */
+background-color: #33333338;
+width: 900px;
+display: inline-block;
+padding: 16px;
+border-radius: 40px;
+max-width: 80%;
+text-align: left;
+transition-duration: 0.3s;
+}
+.ALWOHub h1 {
+user-select: text;
+font-size: 2em;
+margin-bottom:-7px;
+}
+
+.ALWOHub p {
+user-select: text;
+font-size: 1.2em;
+}
+
+.ALWOHub a {
+z-index: 121212;
+display: inline-block;
+text-decoration: none;
+color: white;
+padding: 11px;
+padding-left: 22px;
+padding-right: 22px;
+font-size: 1.5em;
+background-color: #0c0a0a7c;
+border-radius: 20px;
+user-select: none;
+transition-duration: 0.3s;
+}
+.ALWOHub a:hover {
+background-color: rgb(255, 255, 255);
+color: black;
+}
+
+#DivLinkAlwo {
+display:inline;
+}
+
+#DivDivedALWO {
+display: inline;
+}
+
+.ALWOHub:hover {
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 17px 0 rgba(244, 244, 244, 0.829);
+background-color: #3333335f;
+
+}
+
+footer {
+clear: both;
+margin-top: 55;
+margin-bottom: 20;
+}
+.FindWeather {
+margin: auto;
+max-width: 20%;
+   color: white;
+text-decoration: none;
+display: block;
+margin-bottom: 11px;
+border-radius: 44px;
+transition-duration: 0.3s;
+padding-top: 7px;
+padding-bottom: 7px;
+}
+.FindWeather:hover {
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 17px 0 rgba(0, 0, 0, 0.829);
+
+}
+#SectionProjectLanguage {
+padding: 12px;
+text-align: center;
+font-size: 2em;
+margin-bottom: 22px;
+margin-top:30px;
+}
+
+.ButtonChangeRULanguage { /* Button change Language: Russian */
+cursor: pointer;
+font-family:monospace;
+font-weight: 600;
+color: white;
+padding: 5px;
+border-radius: 20px;
+padding-right: 10px;
+padding-left: 10px;
+background-color: #0000003f;
+text-decoration: none;
+border: none;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 7px 0 rgba(244, 244, 244, 0.329);
+transition-duration: 0.4s;
+user-select: none;
+}
+
+.ButtonChangeRULanguage:hover {
+background-color: #00000083;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 7px 0 rgba(244, 244, 244, 0.829);
+}
+
+.ButtonChangeENLanguage { /* Button change Language: English */
+cursor: pointer;
+font-family:monospace;
+font-weight: 600;
+color: white;
+padding: 5px;
+border-radius: 20px;
+padding-right: 10px;
+padding-left: 10px;
+background-color: #0000003f;
+text-decoration: none;
+border: none;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 7px 0 rgba(244, 244, 244, 0.329);
+transition-duration: 0.4s;
+user-select: none;
+}
+
+.ButtonChangeENLanguage:hover {
+background-color: #00000083;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 7px 0 rgba(244, 244, 244, 0.829);
+}
+
+.Screen {position: absolute;
+  top: 90;
+left: 0;
+right: 0;}
+  
+
+.backgroundImageBrowse {
+  background-image: url(/tenor.gif);
+  width: 100%;
+  height: 35%;
+  min-height: 25%;
+ filter: brightness(50%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px 0px 5px 5px;
+  z-index: -1;
+}
+
+
+header { /* Header Page */ 
+z-index: 12;
+background-color: #01ffc487;
+  user-select: none;
+  transition-duration: 0.4s; /* Transparency animation duration */
+}
+
+#Title {
+  
+  position: absolute;
+ left: 8;
+ top:-3px;
+ cursor: pointer;
+ 
+}
+
+section {
+ user-select: none;
+}
+
+header ul {
+ position:absolute;
+ right:6;
+ 
+ top:5;
+}
+
+header li {
+ display:inline;
+ padding-right: 30px;
+ list-style-type: none;
+}
+
+header a:hover { /* Nav text animation */
+ color:aqua;
+ transition-duration: 0.3s;
+
+}   
+
+
+
+header a {
+   cursor: pointer;
+   text-decoration: none;
+   color: white;
+   font-size: 20.4px;
+}
+
+.AboutInfo img {
+  margin-top: 20px;
+  width: 300px;
+  max-width: 70%;
+  border-radius: 200px;
+}
+.AboutInfo h1 {
+user-select: text;
+}
+.AboutInfo h2 {
+  user-select: text;
+  }
+
+  .AboutInfo p {
+      display: block;
+      max-width: 60%;
+      margin: auto;
+      font-size: 20px;
+  }
+
+
+.fadeoutbg {
+  animation-name: fadeoutbg;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeoutbg {
+  0% {opacity: 1}
+  100% {top:200px; opacity: 0;}
+}
+
+
+
+@keyframes fadeinbg {
+  0% {top:90px;opacity: 0}
+  100% {top:0px;opacity: 1;}
+}
+.AnimationDivindex {position: absolute;
+left: 0;
+right: 0;
+animation-name: fadeinbg;
+animation-duration: 1s;
+animation-fill-mode: both;}
+.AnimationDivAbout {
+  left: 0;
+right: 0;
+animation-name: fadeinbg;
+animation-duration: 1s;
+animation-fill-mode: both;}
+
+.AnimationDivHome {position: absolute;
+  top: 50;
+left: 0;
+right: 0;
+animation-name: fadeinbg;
+animation-duration: 1s;
+animation-fill-mode: both;}
+
+.item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+.item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.Sectionqq1 h1 {
+  font-family:BubbleSans;
+  font-size:50px;
+  height: 100px;
+}
+
+.SectionYoutube {
+  margin-top: 200px;
+}
+.SectionYoutube h1 {
+  font-size: 30px;
+  font-family: monospace;
+  
+}
+
+.SectionYoutube p {
+  font-size: 20px;
+  font-family:BubbleSans;
+
+  
+}
+.SectionYoutube iframe {
+  max-width: 90%;
+  border-radius: 30px;
+  box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 11px 0 rgba(255, 255, 255, 0.829);
+
+}
+#description {
+  font-family:BubbleSans;
+}
+
+.SectionDiscord  iframe {
+  max-width: 90%;
+  margin-top: 60px;
+border-radius: 30px;
+box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 11px 0 rgba(255, 255, 255, 0.829);
+
+}
+
+.SectionDiscord h1 {
+  font-size: 30px;
+  font-family: monospace;
+  
+}
+
+.LastNews h1 {
+  margin-top: 40px;
+  font-family: monospace;
+  font-size: 2em;
+}
+.LastNews {
+  margin-bottom: 40px;
+}
+
+.NewsListFZ {
+  margin-bottom: 190px;
+}
+
+.NewsListFZ  h1 {
+  height: 30px;
+  font-size: 44px;
+  font-family: BubbleSans;
+}
+
+
+.NewsListFZ  p {
+  height: 30px;
+  font-size: 44px;
+  font-family: monospace;
+}
+
+@media screen and (max-width: 700px) {
+
+  .Sectionqq1 h1 {
+    font-family:BubbleSans;
+    font-size:30px;
+    height: 80px;
+  }
+  
+  .SectionYoutube {
+    margin-top: 190px;
+  }
+  .SectionYoutube h1 {
+    font-size: 30px;
+    font-family: monospace;
+    
+  }
+  
+  .SectionYoutube p {
+    font-size: 18px;
+    font-family:BubbleSans;
+  
+    
+  }
+  .SectionYoutube iframe {
+    max-width: 90%;
+    height: 300px;
+    max-height: 90%;
+    border-radius: 30px;
+    box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 11px 0 rgba(255, 255, 255, 0.829);
+  
+  }
+  #description {
+    font-family:BubbleSans;
+  }
+  
+  .SectionDiscord  iframe {
+    max-width: 90%;
+    margin-top: 60px;
+  border-radius: 30px;
+  box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 1px 11px 0 rgba(255, 255, 255, 0.829);
+  
+  }
+  
+  .SectionDiscord h1 {
+    font-size: 30px;
+    font-family: monospace;
+    
+  }
+  
+  .LastNews h1 {
+    margin-top: 40px;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  .LastNews {
+    margin-bottom: 40px;
+  }
+  
+  .NewsListFZ {
+    margin-bottom: 190px;
+  }
+  
+  .NewsListFZ  h1 {
+    height: 30px;
+    font-size: 44px;
+    font-family: BubbleSans;
+  }
+  
+  
+  .NewsListFZ  p {
+    height: 30px;
+    font-size: 44px;
+    font-family: monospace;
+  }
+
+}
