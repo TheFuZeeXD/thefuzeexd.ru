@@ -1,4 +1,4 @@
-# thefuzeexd.ru - Official FuzeeX Website
+# <a href="https://thefuzeexd.ru">thefuzeexd.ru</a> - Official fuzeexd Website
 
 This is the source code for the official **thefuzeexd.ru** website for the FuzeeX project. The site serves as a modern web platform focused on presenting information about the project, its features, and user interaction.
 
