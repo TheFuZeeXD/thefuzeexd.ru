@@ -1,0 +1,96 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 15vh;
+    position: fixed;
+    pointer-events: none;
+}
+
+
+.LogoType {
+    pointer-events:all;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 6px;
+    height: 70%;
+    border-radius: 60px;
+}
+
+.LogoType h1 {
+    font-family: monospace, sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    transition: color 0.2s;
+}
+
+.LogoType:active h1 {
+    color: rgb(218, 218, 218);
+}
+
+.LogoType span {
+    transition: color 0.2s;
+}
+
+
+.LogoType:active span {
+    color: red;
+}
+
+.LogoType img {
+    margin-right: 5px;
+    width:45px;
+    border-radius: 99px;
+}
+
+@media screen and (max-width: 900px) {
+
+header {
+    position: relative;
+    justify-content: start;
+    z-index: 76778;
+}
+
+.LogoType {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    margin-top: 13px;
+    margin-left: 7px;
+    height: 50px;
+    border-radius: 60px;
+}
+
+.LogoType h1 {
+    font-family: monospace, sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.LogoType span {
+    transition: color 0.2s;
+}
+
+
+.LogoType:active span {
+    color: red;
+}
+
+.LogoType img {
+    margin-right: 5px;
+    width:45px;
+    border-radius: 99px;
+}
+}
