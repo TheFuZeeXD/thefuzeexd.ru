@@ -13,11 +13,11 @@ section {
 
 .myInfo img {
     user-select: none;
-    width:270px;
+    width: 270px;
     border-radius: 160px;
 }
 
-.myInfo h1 {    
+.myInfo h1 {
     user-select: none;
     font-size: 44px;
     color: white;
@@ -35,6 +35,7 @@ section {
     flex-wrap: wrap;
 
 }
+
 .containerBadges span {
     position: relative;
     user-select: none;
@@ -53,19 +54,29 @@ section {
 }
 
 @keyframes fadeInSpanBages {
-    0% {    padding: 5px 15px;}
-    100% {    padding: 8px 18px;}
+    0% {
+        padding: 5px 15px;
+    }
+
+    100% {
+        padding: 8px 18px;
+    }
 }
 
 
 @keyframes fadeOutSpanBages {
-    0% {    padding: 8px 18px;}
-    100% {    padding: 5px 15px;}
+    0% {
+        padding: 8px 18px;
+    }
+
+    100% {
+        padding: 5px 15px;
+    }
 }
 
 .aboutMe {
     border: 4px solid rgb(170, 170, 170);
-    border-style: none  none none solid;
+    border-style: none none none solid;
     box-shadow: 1px 1px 10px black;
     border-radius: 20px;
     display: flex;
@@ -81,7 +92,7 @@ section {
 
 .aboutMe:hover {
     border: 4px solid rgb(248, 119, 119);
-    border-style: none  none none solid;
+    border-style: none none none solid;
 }
 
 .aboutMe:hover h2 {
@@ -91,6 +102,7 @@ section {
 .aboutMe:hover p {
     color: white;
 }
+
 .aboutMe p {
     margin-top: 0px;
     display: block;
@@ -115,15 +127,14 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
-   
+    width: 100%;
 }
 
 .projects {
     cursor: pointer;
     user-select: none;
     border: 4px solid rgb(170, 170, 170);
-    border-style: none  none none solid;
+    border-style: none none none solid;
     box-shadow: 1px 1px 10px black;
     border-radius: 20px;
     display: flex;
@@ -139,7 +150,7 @@ section {
 
 .projects:hover {
     border: 4px solid rgb(248, 119, 119);
-    border-style: none  none none solid;
+    border-style: none none none solid;
 }
 
 .flex {
@@ -176,16 +187,12 @@ section {
     background-repeat: no-repeat;
     display: inline-block;
     position: sticky;
-    filter: 
-    brightness(10)
-    sepia(2.3)
-    hue-rotate(225deg)
-    saturate(3)
-    contrast(7.9);
+    filter:
+        brightness(10) sepia(2.3) hue-rotate(225deg) saturate(3) contrast(7.9);
     z-index: 3;
     left: 1600px;
-    top:0;
-    margin-right:20px; 
+    top: 0;
+    margin-right: 20px;
 }
 
 .LangName {
@@ -206,8 +213,8 @@ section {
     position: relative;
     border-radius: 60px;
     z-index: 3;
-    right:5px;
-    top:4px;
+    right: 5px;
+    top: 4px;
 }
 
 #JS::before {
@@ -215,7 +222,7 @@ section {
 }
 
 #PHP::before {
-    background-color: rgb(93, 106, 218,0.651);
+    background-color: rgb(93, 106, 218, 0.651);
 }
 
 .projects p {
@@ -241,77 +248,77 @@ section {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 900px)  {
+@media screen and (max-width: 900px) {
 
-.myProject {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-    flex-direction: column;
-}
+    .myProject {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
 
-.myInfo h1 {    
-    user-select: none;
-    font-size: 24px;
-    color: white;
-    font-family: PaluiSP;
-    margin-bottom: 10px;
-}
+    .myInfo h1 {
+        user-select: none;
+        font-size: 24px;
+        color: white;
+        font-family: PaluiSP;
+        margin-bottom: 10px;
+    }
 
-.projects {
-    width: 90%;
-    margin: 15px;
-}
+    .projects {
+        width: 90%;
+        margin: 15px;
+    }
 
-.containerBadges {
-    margin: 0;
-    width: 200%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
+    .containerBadges {
+        margin: 0;
+        width: 200%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 
-.containerBadges span {
-    position: relative;
-    user-select: none;
-    border-radius: 10px;
-    background-color: rgb(253, 117, 117);
-    font-family: monospace;
-    font-weight: 500;
-    color: white;
-    padding: 5px 15px;
-    margin: 4px;
-    margin-top: 2px;
-    animation: fadeOutSpanBages 0.3s both;
-}
+    .containerBadges span {
+        position: relative;
+        user-select: none;
+        border-radius: 10px;
+        background-color: rgb(253, 117, 117);
+        font-family: monospace;
+        font-weight: 500;
+        color: white;
+        padding: 5px 15px;
+        margin: 4px;
+        margin-top: 2px;
+        animation: fadeOutSpanBages 0.3s both;
+    }
 
-.aboutMe h2 {
-    font-size: 15px;
-    font-family: sans-serif;
-    font-weight: 100;
-    color: rgb(255, 220, 220);
-    margin-bottom: 0;
-    margin-left: 15px;
-    margin-top: 15px;
-    align-self: flex-start;
-    transition: font-size 0.2s;
-}
+    .aboutMe h2 {
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: 100;
+        color: rgb(255, 220, 220);
+        margin-bottom: 0;
+        margin-left: 15px;
+        margin-top: 15px;
+        align-self: flex-start;
+        transition: font-size 0.2s;
+    }
 
-.aboutMe {
-    border: 4px solid rgb(170, 170, 170);
-    border-style: none  none none solid;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(68, 68, 68);
-    width: 80%;
-    margin-top: 10px;
-    height: 60vh;
-    transition: border 0.1s;
-}
+    .aboutMe {
+        border: 4px solid rgb(170, 170, 170);
+        border-style: none none none solid;
+        box-shadow: 1px 1px 10px black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(68, 68, 68);
+        width: 80%;
+        margin-top: 10px;
+        height: 60vh;
+        transition: border 0.1s;
+    }
 }
