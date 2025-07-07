@@ -3,26 +3,26 @@ body {
   background-color: black;
 }
 
-/* Для WebKit браузеров (Chrome, Safari, Edge) */
+
 ::-webkit-scrollbar {
-  width: 4px;  /* Ширина скроллбара */
-  height: 4px; /* Высота скроллбара (для горизонтального) */
+  width: 4px;  
+  height: 4px;
 }
 
-/* Убираем фон трека (делаем его прозрачным) */
+
 ::-webkit-scrollbar-track {
-  background: transparent; /* Прозрачный фон */
+  background: transparent; 
   background-color: #000000;
   border-radius: 10px;
 }
 
-/* Оставляем стиль ползунка */
+
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Цвет ползунка */
+  background: #888;
   border-radius: 10px;
 }
 
-/* Изменяем цвет при наведении */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -185,7 +185,7 @@ body.LoadHidden {
     transform: translateZ(0);
 }
 
-/* 3D depth effect */
+
 .fz-text span:before {
     content: attr(data-char);
     position: absolute;
@@ -229,9 +229,6 @@ body.LoadHidden {
     filter: blur(1px);
     transition: opacity 1.5s ease-out;
 }
-
-
-
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
