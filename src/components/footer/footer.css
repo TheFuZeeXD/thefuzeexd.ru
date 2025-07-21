@@ -10,12 +10,28 @@ footer {
 
 footer h2 {
     text-align: center;
-        margin: 5px;
+    margin: 5px;
 }
+
+
+
+#contactMalito {
+    display: inline;
+    text-decoration: none;
+    color: rgb(88, 208, 255);
+    transition: color 0.1;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+#contactMalito:hover {
+    color: rgb(90, 255, 255);
+}
+
 footer a {
     text-decoration: none;
     font-family: monospace;
-    font-size:18px;
+    font-size: 18px;
     color: rgb(252, 61, 61);
     display: block;
     margin: auto;
@@ -30,13 +46,14 @@ footer a:hover {
 
 footer img {
     user-select: none;
-    position:sticky;
+    position: sticky;
     left: 2630px;
-        cursor: pointer;
+    cursor: pointer;
     margin-right: 10px;
     bottom: 10px;
     width: 30px;
 }
+
 footer #ImgBox {
     width: 100%;
 }
