@@ -16,7 +16,6 @@ export default function Footer() {
     set(isTheme == "Light" ? "Hight" : "Light");
     localStorage.setItem('Theme-color', isTheme);
     location.reload();
-    // localStorage.getItem("Theme-color") == "Hight" ? Background.src = Banner : Background.src = BannerLight;
   };
 
   useEffect(() => {
@@ -27,6 +26,7 @@ export default function Footer() {
   return (
     <footer>
       <h2>{LanguagePack.footer.title}</h2>
+      <a id="contactMalito" href="mailto:fuzeexd@thefuzeexd.ru?subject=Связаться с thefuzeexd">fuzeexd@thefuzeexd.ru</a>
       <a href="https://github.com/TheFuZeeXD/thefuzeexd.ru">Source❤️Code</a>
       <div id="ImgBox">
         <img onClick={changeTheme} src={localStorage.getItem("Theme-color") == "Hight" ? Mon : Sun}></img>
