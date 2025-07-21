@@ -2,6 +2,24 @@ section {
     margin: 15px 0px;
 }
 
+#MyContent_Code {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.ScrollContents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
 .myInfo {
     display: flex;
     justify-content: center;
@@ -85,10 +103,9 @@ section {
     flex-direction: column;
     background-color: rgb(68, 68, 68);
     width: 60%;
-    height: 50vh;
+    height: 100%;
     transition: border 0.1s;
 }
-
 
 .aboutMe:hover {
     border: 4px solid rgb(248, 119, 119);
@@ -144,6 +161,7 @@ section {
     background-color: rgb(68, 68, 68);
     width: 100%;
     margin: 15px;
+    height: 230px;
     vertical-align: middle;
     transition: border 0.1s;
 }
@@ -190,7 +208,7 @@ section {
     filter:
         brightness(10) sepia(2.3) hue-rotate(225deg) saturate(3) contrast(7.9);
     z-index: 3;
-    left: 1600px;
+    left: 12600px;
     top: 0;
     margin-right: 20px;
 }
@@ -225,7 +243,19 @@ section {
     background-color: rgb(93, 106, 218, 0.651);
 }
 
+#SHELL::before {
+    background-color: rgba(39, 255, 50, 0.651);
+}
+
+
+#myArchCFG {
+    display: block;
+    margin: auto;
+    width: 31.5%;
+}
+
 .projects p {
+
     margin-top: 0px;
     display: block;
     padding: 11px;
@@ -248,7 +278,121 @@ section {
     margin-bottom: 0;
 }
 
+.myGitHub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myGitHub img {
+    user-select: none;
+    margin: 0px 20px;
+}
+
+#title-GitHub {
+    font-family: monospace;
+    color: white;
+}
+
+
+.containerLanguagesPr {
+    margin: 0;
+    width: 100%;
+    height: 4vh;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+
+}
+
+.containerIDEPr {
+    margin: 0;
+    width: 100%;
+    height: 7vh;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+
+.containerIDEPr span {
+    position: relative;
+    user-select: none;
+    border-radius: 10px;
+    background-color: rgb(253, 117, 117);
+    font-family: monospace;
+    font-weight: 600;
+    color: white;
+    padding: 5px 15px;
+    margin: 5px;
+    animation: fadeOutSpanBages 0.3s both;
+}
+
+.containerIDEPr span:hover {
+    animation: fadeInSpanBages 0.3s both;
+}
+
+#lastCLPr span {
+    cursor: pointer;
+}
+
+#PrContentView #lastCLPr {
+    margin-bottom: 10px;
+}
+
+.containerLanguagesPr span {
+    position: relative;
+    user-select: none;
+    border-radius: 10px;
+    background-color: rgb(253, 117, 117);
+    font-family: monospace;
+    font-weight: 600;
+    color: white;
+    padding: 5px 15px;
+    margin: 5px;
+    animation: fadeOutSpanBages 0.3s both;
+}
+
+.containerLanguagesPr span:hover {
+    animation: fadeInSpanBages 0.3s both;
+}
+
+#header-title_aboutME-2 {
+    transition: font-size 0.5s;
+}
+
+#header-title_aboutME-3 {
+    transition: font-size 0.7s;
+}
+
+
 @media screen and (max-width: 900px) {
+
+
+    #myArchCFG {
+        width: 90%;
+        margin: 15px;
+    }
+
+    .myGitHub img {
+        width: 90%;
+        margin: 15px;
+    }
+
+    .myGitHub {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .myProject {
         display: flex;
@@ -256,6 +400,32 @@ section {
         align-items: center;
         width: 100%;
         flex-direction: column;
+    }
+
+    #PrContentView {
+        user-select: none;
+        height: 350px;
+    }
+
+
+    #PrContentView .containerLanguagesPr {
+        margin-left: 15px;
+        margin-bottom: 78px;
+    }
+
+    #PrContentView #firstCLPr span {
+        margin: 5px;
+        margin-right: 10px;
+    }
+
+    #PrContentView #firstCLPr {
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    #PrContentView #lastCLPr {
+        margin-left: 15px;
+        margin-bottom: 0;
     }
 
     .myInfo h1 {
@@ -268,6 +438,7 @@ section {
 
     .projects {
         width: 90%;
+        height: 32vh;
         margin: 15px;
     }
 
@@ -318,7 +489,7 @@ section {
         background-color: rgb(68, 68, 68);
         width: 80%;
         margin-top: 10px;
-        height: 60vh;
+        height: 33vh;
         transition: border 0.1s;
     }
 }
