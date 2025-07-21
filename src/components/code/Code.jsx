@@ -7,49 +7,121 @@ import LanguagePack from "../../assets/lang"
 
 export default function Code() {
     return (
-        <>
-            <section className="myInfo">
-                <img src={Logo}></img>
-                <h1>TheFuZeeXD</h1>
-                <div className="containerBadges">
-                    <span>👤 He/Him</span>
-                    <span>🏔️ Sankt-Peterburg</span>
-                    <span>&lt;/&gt; Web-Developer</span>
-                </div>
-            </section>
+        <div id="MyContent_Code">
 
-            <section className="aboutMe">
-                <h2>{LanguagePack.aboutme.title}</h2>
-                <p>{LanguagePack.aboutme.description}</p>
-            </section>
-
-            <h1 id="title-Project">{LanguagePack.projects.title}</h1>
-            <section className="myProject">
-                <div className="projects" id="BRH" onClick={() => { location.href = "https://github.com/TheFuZeeXD/BR-Helper" }}>
-                    <div className="flex">
-                        <h1>BR-Helper | <span className="Author">by TheFuZeeXD</span></h1>
-                        <p>{LanguagePack.projects.brh_description}</p>
-                        <h3 className="LangName" id="JS">JavaScript</h3>
+            <div className="ScrollContents">
+                <section className="myInfo">
+                    <img src={Logo}></img>
+                    <h1>TheFuZeeXD</h1>
+                    <div className="containerBadges">
+                        <span>👤 He/Him</span>
+                        <span>🏔️ Sankt-Peterburg</span>
+                        <span>&lt;/&gt; Web-Developer</span>
                     </div>
-                </div>
+                </section>
 
-                <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://naebalova.ru/" }}>
-                    <div className="flex">
-                        <h1>NaebVerse | <span className="Author">by TheFuZeeXD</span></h1>
-                        <p>{LanguagePack.projects.naebverse_description}</p>
-                        <h3 className="LangName" id="PHP">PHP</h3>
+
+
+                <section className="aboutMe">
+                    <h2>{LanguagePack.aboutme.title}</h2>
+                    <p>{LanguagePack.aboutme.description}</p>
+                </section>
+
+
+                <section className="aboutMe" id="PrContentView">
+                    <h2>{LanguagePack.PrContentView.title1}</h2>
+                    <div className="containerLanguagesPr" id="firstCLPr">
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>HTML5</span>
+                        <span>TypeScript</span>
+                        <span>CSS</span>
+                        <span>SQL</span>
+                        <span>Python</span>
                     </div>
-                </div>
-
-
-                <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://naebalova.store/" }}>
-                    <div className="flex">
-                        <h1>Naebalova.store | <span className="Author">by TheFuZeeXD</span></h1>
-                        <p>{LanguagePack.projects.naebalova_store_description}</p>
-                        <h3 className="LangName" id="PHP">PHP</h3>
+                    <h2 id="header-title_aboutME-2">{LanguagePack.PrContentView.title2}</h2>
+                    <div className="containerLanguagesPr" id="lastCLPr">
+                        <span onClick={() => { location.href = "https://github.com/TheFuZeeXD" }}>GitHub</span>
+                        <span onClick={() => { location.href = "https://www.youtube.com/@TheFuZeeXD" }}>YouTube</span>
+                        <span onClick={() => { location.href = "https://ru.pinterest.com/TheFuZeeXD/" }}>Pinterest</span>
                     </div>
-                </div>
-            </section>
-        </>
+                    <h2 id="header-title_aboutME-3">{LanguagePack.PrContentView.title3}</h2>
+                    <div className="containerIDEPr">
+                        <span>VSCode</span>
+                        <span>Vim</span>
+                    </div>
+                </section>
+            </div>
+
+
+            <div className="ScrollContents">
+                <h1 id="title-Project">{LanguagePack.projects.title}</h1>
+                <section className="myProject">
+                    <div className="projects" id="BRH" onClick={() => { location.href = "https://github.com/TheFuZeeXD/BR-Helper" }}>
+                        <div className="flex">
+                            <h1>BR-Helper | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.brh_description}</p>
+                            <h3 className="LangName" id="JS">JavaScript</h3>
+                        </div>
+                    </div>
+
+                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://naebalova.ru/" }}>
+                        <div className="flex">
+                            <h1>NaebVerse | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.naebverse_description}</p>
+                            <h3 className="LangName" id="PHP">PHP</h3>
+                        </div>
+                    </div>
+
+
+                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://naebalova.store/" }}>
+                        <div className="flex">
+                            <h1>Naebalova.store | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.naebalova_store_description}</p>
+                            <h3 className="LangName" id="PHP">PHP</h3>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section className="myProject">
+                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://github.com/TheFuZeeXD/arch-hyprland-config" }}>
+                        <div className="flex">
+                            <h1>MyArch Config | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.archcfg_description}</p>
+                            <h3 className="LangName" id="SHELL">Shell</h3>
+                        </div>
+                    </div>
+
+                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://addons.mozilla.org/ru/firefox/addon/br-helper-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82-%D0%B4%D0%BB%D1%8F-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" }}>
+                        <div className="flex">
+                            <h1>BR-Helper for FireFox | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.brh_description}</p>
+                            <h3 className="LangName" id="JS">JavaScript</h3>
+                        </div>
+                    </div>
+
+
+                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://naebalova.store/" }}>
+                        <div className="flex">
+                            <h1>А что это? | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.naebalova_store_description}</p>
+                            <h3 className="LangName" id="RR">Undefined</h3>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <div className="ScrollContents">
+                <h1 id="title-GitHub">{LanguagePack.github.title}</h1>
+                <section className="myGitHub">
+                    <img src="https://github-readme-stats.vercel.app/api?username=TheFuZeeXD&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false"></img>
+                    <img src="https://nirzak-streak-stats.vercel.app/?user=TheFuZeeXD&theme=tokyonight&hide_border=false"></img>
+                </section>
+            </div>
+
+        </div >
     )
 }
