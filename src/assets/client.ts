@@ -21,5 +21,6 @@ if (localStorage.getItem("Theme-color") == null || localStorage.getItem("Theme-c
         localStorage.setItem("Theme-color", "Light")
     } else if (theme == "Dark") {
         localStorage.setItem("Theme-color", "Hight")
+        document.body.classList.add("Dark-mode");
     }
 }
