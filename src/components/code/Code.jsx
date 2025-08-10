@@ -75,10 +75,10 @@ export default function Code() {
                     </div>
 
 
-                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://naebalova.store/" }}>
+                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://wonderix.ru/" }}>
                         <div className="flex">
-                            <h1>Naebalova.store | <span className="Author">by TheFuZeeXD</span></h1>
-                            <p>{LanguagePack.projects.naebalova_store_description}</p>
+                            <h1>Wonderix | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.wonderix_description}</p>
                             <h3 className="LangName" id="PHP">PHP</h3>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ export default function Code() {
 
 
                 <section className="myProject">
-                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://github.com/TheFuZeeXD/arch-hyprland-config" }}>
+                    <div className="projects" id="myArch" onClick={() => { location.href = "https://github.com/TheFuZeeXD/arch-hyprland-config" }}>
                         <div className="flex">
                             <h1>MyArch Config | <span className="Author">by TheFuZeeXD</span></h1>
                             <p>{LanguagePack.projects.archcfg_description}</p>
@@ -94,20 +94,12 @@ export default function Code() {
                         </div>
                     </div>
 
-                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://addons.mozilla.org/ru/firefox/addon/br-helper-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82-%D0%B4%D0%BB%D1%8F-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B0/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" }}>
+
+                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://github.com/TheFuZeeXD/Alixso" }}>
                         <div className="flex">
-                            <h1>BR-Helper for FireFox | <span className="Author">by TheFuZeeXD</span></h1>
-                            <p>{LanguagePack.projects.brh_description}</p>
+                            <h1>Alixso bot | <span className="Author">by TheFuZeeXD</span></h1>
+                            <p>{LanguagePack.projects.alixso_description}</p>
                             <h3 className="LangName" id="JS">JavaScript</h3>
-                        </div>
-                    </div>
-
-
-                    <div className="projects" id="NaebVerse" onClick={() => { location.href = "https://naebalova.store/" }}>
-                        <div className="flex">
-                            <h1>А что это? | <span className="Author">by TheFuZeeXD</span></h1>
-                            <p>{LanguagePack.projects.naebalova_store_description}</p>
-                            <h3 className="LangName" id="RR">Undefined</h3>
                         </div>
                     </div>
 
@@ -117,8 +109,8 @@ export default function Code() {
             <div className="ScrollContents">
                 <h1 id="title-GitHub">{LanguagePack.github.title}</h1>
                 <section className="myGitHub">
-                    <img src="https://github-readme-stats.vercel.app/api?username=TheFuZeeXD&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false"></img>
-                    <img src="https://nirzak-streak-stats.vercel.app/?user=TheFuZeeXD&theme=tokyonight&hide_border=false"></img>
+                    <img id="Git1" src="https://github-readme-stats.vercel.app/api?username=TheFuZeeXD&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false"></img>
+                    <img id="Git2" src="https://nirzak-streak-stats.vercel.app/?user=TheFuZeeXD&theme=tokyonight&hide_border=false"></img>
                 </section>
             </div>
 
