@@ -16,11 +16,21 @@ export default function Footer() {
     set(isTheme == "Light" ? "Hight" : "Light");
     localStorage.setItem('Theme-color', isTheme);
     location.reload();
+    // localStorage.getItem("Theme-color") == "Hight" ? Background.src = Banner : Background.src = BannerLight;
   };
 
   useEffect(() => {
     set(isTheme == "Light" ? "Hight" : "Light");
     localStorage.setItem('Theme-color', isTheme);
+    if (isTheme == "Light") {
+      document.body.classList.remove("Dark-mode");
+    } else {
+      document.body.classList.add("Dark-mode");
+      document.querySelector("#Git1").src = "https://github-readme-stats.vercel.app/api?username=TheFuZeeXD&theme=maroongold&hide_border=false&include_all_commits=false&count_private=false";
+      document.querySelector("#Git2").src = "https://nirzak-streak-stats.vercel.app/?user=TheFuZeeXD&theme=maroongold&hide_border=false";
+
+    }
+
   }, []);
 
   return (
