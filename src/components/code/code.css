@@ -2,6 +2,12 @@ section {
     margin: 15px 0px;
 }
 
+#MyContent_Code a {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 #MyContent_Code {
     width: 100%;
     height: auto;
@@ -58,13 +64,17 @@ section {
     position: relative;
     user-select: none;
     border-radius: 10px;
-    background-color: rgb(253, 117, 117);
+    background-color: rgb(117, 180, 253);
     font-family: monospace;
     font-weight: 900;
     color: white;
     padding: 5px 15px;
     margin: 5px;
     animation: fadeOutSpanBages 0.3s both;
+}
+
+.Dark-mode .containerBadges span {
+    background-color: rgb(253, 117, 117);
 }
 
 .containerBadges span:hover {
@@ -101,13 +111,22 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(43, 47, 56);
     width: 60%;
     height: 100%;
     transition: border 0.1s;
 }
 
+.Dark-mode .aboutMe {
+    background-color: rgb(56, 43, 43);
+}
+
 .aboutMe:hover {
+    border: 4px solid rgb(119, 186, 248);
+    border-style: none none none solid;
+}
+
+.Dark-mode .aboutMe:hover {
     border: 4px solid rgb(248, 119, 119);
     border-style: none none none solid;
 }
@@ -158,7 +177,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(43, 47, 56);
     width: 100%;
     margin: 15px;
     height: 230px;
@@ -166,13 +185,18 @@ section {
     transition: border 0.1s;
 }
 
+.Dark-mode .projects {
+    background-color: rgb(56, 43, 43);
+}
+
 .projects:hover {
-    border: 4px solid rgb(248, 119, 119);
+    border: 4px solid rgb(119, 186, 248);
     border-style: none none none solid;
 }
 
-.flex {
-    margin: 7px;
+.Dark-mode .projects:hover {
+    border: 4px solid rgb(248, 119, 119);
+    border-style: none none none solid;
 }
 
 .Author {
@@ -219,6 +243,8 @@ section {
     font-size: 17px;
     font-family: sans-serif;
     font-weight: 400;
+    position: relative;
+
 }
 
 .LangName::before {
@@ -231,8 +257,12 @@ section {
     position: relative;
     border-radius: 60px;
     z-index: 3;
-    right: 5px;
     top: 4px;
+    right: 7px;
+}
+
+#LangContainer {
+    margin-bottom: 20px;
 }
 
 #JS::before {
@@ -248,14 +278,8 @@ section {
 }
 
 
-#myArchCFG {
-    display: block;
-    margin: auto;
-    width: 31.5%;
-}
-
 .projects p {
-
+    text-overflow: ellipsis;
     margin-top: 0px;
     display: block;
     padding: 11px;
@@ -294,6 +318,14 @@ section {
     color: white;
 }
 
+#PrContentView span {
+    background-color: rgb(117, 180, 253);
+}
+
+.Dark-mode #PrContentView span {
+    background-color: rgb(253, 117, 117);
+}
+
 
 .containerLanguagesPr {
     margin: 0;
@@ -327,7 +359,6 @@ section {
     position: relative;
     user-select: none;
     border-radius: 10px;
-    background-color: rgb(253, 117, 117);
     font-family: monospace;
     font-weight: 600;
     color: white;
@@ -352,7 +383,6 @@ section {
     position: relative;
     user-select: none;
     border-radius: 10px;
-    background-color: rgb(253, 117, 117);
     font-family: monospace;
     font-weight: 600;
     color: white;
@@ -377,10 +407,6 @@ section {
 @media screen and (max-width: 900px) {
 
 
-    #myArchCFG {
-        width: 90%;
-        margin: 15px;
-    }
 
     .myGitHub img {
         width: 90%;
@@ -455,7 +481,6 @@ section {
         position: relative;
         user-select: none;
         border-radius: 10px;
-        background-color: rgb(253, 117, 117);
         font-family: monospace;
         font-weight: 500;
         color: white;
@@ -486,10 +511,19 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: rgb(68, 68, 68);
         width: 80%;
         margin-top: 10px;
-        height: 33vh;
+        height: 46vh;
         transition: border 0.1s;
+    }
+
+    .projects {
+        height: 290px;
+    }
+
+    .projects p {
+        max-height: 7.5em;
+        line-height: 1.5em;
+        margin-bottom: 45px;
     }
 }
