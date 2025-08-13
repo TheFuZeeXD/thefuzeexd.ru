@@ -1,7 +1,6 @@
-
 import "./code.css"
 import "../../../fonts.css"
-import Logo from "/test_image/avatar.gif"
+import Logo from "/image/avatar.gif"
 import LanguagePack from "../../../assets/lang"
 import { Icons } from "../../../assets/client"
 // Created by TheFuZeeXD

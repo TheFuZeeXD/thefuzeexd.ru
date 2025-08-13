@@ -214,7 +214,7 @@ body.LoadHidden {
     transform: translateZ(0);
 }
 
-/* 3D depth effect */
+
 .fz-text span:before {
     content: attr(data-char);
     position: absolute;

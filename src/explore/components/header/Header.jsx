@@ -1,5 +1,5 @@
 import "./header.css"
-import Logo from "/test_image/favicon.png"
+import Logo from "/image/favicon.png"
 import elaina from "/image/chibi_pixel_elaina.gif"
 
 export default function Header() {
