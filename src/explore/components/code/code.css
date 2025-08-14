@@ -245,13 +245,12 @@ section {
 }
 
 .LangName {
-    margin: 10px 15px;
+    margin: 15px;
     color: white;
     font-size: 17px;
-    font-family: sans-serif;
-    font-weight: 400;
-    position: relative;
-
+    font-family: Roboto;
+    font-weight: 500;
+    position: relative
 }
 
 .ContainerLang {
@@ -556,6 +555,10 @@ section {
         transition: border 0.1s;
     }
 
+    #infoText {
+        height: 400px;
+    }
+
     .projects p {
         max-height: 7.5em;
         line-height: 1.5em;
@@ -565,4 +568,23 @@ section {
     #header-title_aboutME-3 {
         margin-top: 50px;
     }
+}
+
+#redirectGame {
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Roboto;
+    transition: background-color 0.3s;
+    box-shadow: 1px 1px 8px black;
+    background-color: rgb(255, 68, 68);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#redirectGame:hover {
+    background-color: rgb(255, 135, 135);
 }

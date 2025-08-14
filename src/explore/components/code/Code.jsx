@@ -19,11 +19,12 @@ export default function Code() {
                         <span>🏔️ Sankt-Peterburg</span>
                         <span>&lt;/&gt; Web-Developer</span>
                     </div>
+
                 </section>
 
 
 
-                <section className="aboutMe">
+                <section className="aboutMe" id="infoText">
                     <h2>{LanguagePack.aboutme.title}</h2>
                     <p>{LanguagePack.aboutme.description}</p>
                 </section>
